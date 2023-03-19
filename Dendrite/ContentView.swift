@@ -33,10 +33,13 @@ struct ContentView: View {
                             .font(.custom("Roboto", size: 24))
                             .foregroundColor(.primary)
                             .padding(.bottom)
+                            .textFieldStyle(PlainTextFieldStyle())
+                            .padding(.vertical, 1)
 
                             Divider()
                                 .frame(width: geometry.size.width / 3)
-                                .background(Color.primary)
+                                .background(Color.clear)
+                                .padding(.top, 1)
 
                             TextEditor(text: Binding(get: { selectedNote?.body ?? "" }, set: { newText in
                                 if let index = selectedNoteIndex {
@@ -48,6 +51,9 @@ struct ContentView: View {
                             .foregroundColor(.primary)
                         }
                         .padding()
+                        .background(Color.white) // set the background color of the child VStack to white
+                        .cornerRadius(10) // add a corner radius to the child VStack
+                        .shadow(radius: 5)
                     } else {
                         Text("Select or create a note")
                             .font(.custom("Roboto", size: 24))
@@ -57,6 +63,7 @@ struct ContentView: View {
                 }
             }
         }
+        .background(Color.clear)
     }
     
     private var searchBar: some View {
