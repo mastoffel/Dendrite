@@ -14,6 +14,7 @@
 		06B83AC329C76192006C6DF7 /* DendriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B83AC229C76192006C6DF7 /* DendriteTests.swift */; };
 		06B83ACD29C76192006C6DF7 /* DendriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B83ACC29C76192006C6DF7 /* DendriteUITests.swift */; };
 		06B83ACF29C76192006C6DF7 /* DendriteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B83ACE29C76192006C6DF7 /* DendriteUITestsLaunchTests.swift */; };
+		06B83ADC29C761AA006C6DF7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B83ADB29C761AA006C6DF7 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		06B83AC829C76192006C6DF7 /* DendriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DendriteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B83ACC29C76192006C6DF7 /* DendriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DendriteUITests.swift; sourceTree = "<group>"; };
 		06B83ACE29C76192006C6DF7 /* DendriteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DendriteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06B83ADB29C761AA006C6DF7 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				06B83AB429C76192006C6DF7 /* Assets.xcassets */,
 				06B83AB929C76192006C6DF7 /* Dendrite.entitlements */,
 				06B83AB629C76192006C6DF7 /* Preview Content */,
+				06B83ADB29C761AA006C6DF7 /* Note.swift */,
 			);
 			path = Dendrite;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				06B83AB329C76191006C6DF7 /* ContentView.swift in Sources */,
 				06B83AB129C76191006C6DF7 /* DendriteApp.swift in Sources */,
+				06B83ADC29C761AA006C6DF7 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
