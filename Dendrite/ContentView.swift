@@ -34,12 +34,12 @@ struct ContentView: View {
                             .foregroundColor(.primary)
                             .padding(.bottom)
                             .textFieldStyle(PlainTextFieldStyle())
-                            .padding(.vertical, 1)
+                            .padding(.vertical, 0)
 
                             Divider()
                                 .frame(width: geometry.size.width / 3)
-                                .background(Color.clear)
-                                .padding(.top, 1)
+                                .background(Color.primary)
+                                .padding(.top, -10)
 
                             TextEditor(text: Binding(get: { selectedNote?.body ?? "" }, set: { newText in
                                 if let index = selectedNoteIndex {
