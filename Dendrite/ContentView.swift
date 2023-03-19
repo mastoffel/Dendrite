@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var notes = [Note]()
     @State private var selectedNote: Note?
     @State private var searchText = ""
-    
+
     var body: some View {
         NavigationView {
             VStack {
@@ -19,23 +19,44 @@ struct ContentView: View {
                 notesList
             }
             .frame(minWidth: 300)
-            
+
             VStack {
-                TextField("Title", text: Binding(get: { selectedNote?.title ?? "" }, set: { newTitle in
-                    if let index = selectedNoteIndex {
-                        selectedNote?.title = newTitle
-                        notes[index].title = newTitle
+                if let _ = selectedNote {
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text("Title")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+
+                        TextField("Enter title here", text: Binding(get: { selectedNote?.title ?? "" }, set: { newTitle in
+                            if let index = selectedNoteIndex {
+                                selectedNote?.title = newTitle
+                                notes[index].title = newTitle
+                            }
+                        }))
+                        .font(.custom("Roboto", size: 24))
+                        .foregroundColor(.primary)
+                        .padding(.bottom)
+
+                        Text("Content")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+
+                        TextEditor(text: Binding(get: { selectedNote?.body ?? "" }, set: { newText in
+                            if let index = selectedNoteIndex {
+                                selectedNote?.body = newText
+                                notes[index].body = newText
+                            }
+                        }))
+                        .font(.custom("Roboto", size: 16))
+                        .foregroundColor(.primary)
                     }
-                }))
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding(.horizontal)
-                
-                TextEditor(text: Binding(get: { selectedNote?.body ?? "" }, set: { newText in
-                    if let index = selectedNoteIndex {
-                        selectedNote?.body = newText
-                        notes[index].body = newText
-                    }
-                }))
+                    .padding()
+                } else {
+                    Text("Select or create a note")
+                        .font(.custom("Roboto", size: 24))
+                        .foregroundColor(.gray)
+                        .padding()
+                }
             }
         }
     }

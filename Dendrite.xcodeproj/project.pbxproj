@@ -15,6 +15,7 @@
 		06B83ACD29C76192006C6DF7 /* DendriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B83ACC29C76192006C6DF7 /* DendriteUITests.swift */; };
 		06B83ACF29C76192006C6DF7 /* DendriteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B83ACE29C76192006C6DF7 /* DendriteUITestsLaunchTests.swift */; };
 		06B83ADC29C761AA006C6DF7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B83ADB29C761AA006C6DF7 /* Note.swift */; };
+		06B83AFA29C77E7F006C6DF7 /* Roboto in Resources */ = {isa = PBXBuildFile; fileRef = 06B83AF829C77DD4006C6DF7 /* Roboto */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		06B83ACC29C76192006C6DF7 /* DendriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DendriteUITests.swift; sourceTree = "<group>"; };
 		06B83ACE29C76192006C6DF7 /* DendriteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DendriteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		06B83ADB29C761AA006C6DF7 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		06B83AF829C77DD4006C6DF7 /* Roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Roboto; path = ../../../../../Downloads/Roboto; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		06B83AA429C76191006C6DF7 = {
 			isa = PBXGroup;
 			children = (
+				06B83AF729C77D43006C6DF7 /* Fonts */,
 				06B83AAF29C76191006C6DF7 /* Dendrite */,
 				06B83AC129C76192006C6DF7 /* DendriteTests */,
 				06B83ACB29C76192006C6DF7 /* DendriteUITests */,
@@ -130,6 +133,14 @@
 				06B83ACE29C76192006C6DF7 /* DendriteUITestsLaunchTests.swift */,
 			);
 			path = DendriteUITests;
+			sourceTree = "<group>";
+		};
+		06B83AF729C77D43006C6DF7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				06B83AF829C77DD4006C6DF7 /* Roboto */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06B83AFA29C77E7F006C6DF7 /* Roboto in Resources */,
 				06B83AB829C76192006C6DF7 /* Preview Assets.xcassets in Resources */,
 				06B83AB529C76192006C6DF7 /* Assets.xcassets in Resources */,
 			);
