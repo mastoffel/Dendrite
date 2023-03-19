@@ -58,9 +58,9 @@ struct ContentView: View {
                     VStack(alignment: .leading) {
                         Text(note.title.isEmpty ? "Untitled" : note.title)
                             .font(.headline)
-                        Text(note.body)
-                            .font(.subheadline)
-                            .lineLimit(1)
+//                        Text(note.body)
+//                            .font(.subheadline)
+//                            .lineLimit(1)
                     }
                 }
             }
