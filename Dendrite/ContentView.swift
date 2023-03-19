@@ -20,42 +20,40 @@ struct ContentView: View {
             }
             .frame(minWidth: 300)
 
-            VStack {
-                if let _ = selectedNote {
-                    VStack(alignment: .leading, spacing: 16) {
-                        Text("Title")
-                            .font(.caption)
-                            .foregroundColor(.secondary)
+            GeometryReader { geometry in
+                VStack {
+                    if let _ = selectedNote {
+                        VStack(alignment: .leading, spacing: 16) {
+                            TextField("Enter title here", text: Binding(get: { selectedNote?.title ?? "" }, set: { newTitle in
+                                if let index = selectedNoteIndex {
+                                    selectedNote?.title = newTitle
+                                    notes[index].title = newTitle
+                                }
+                            }))
+                            .font(.custom("Roboto", size: 24))
+                            .foregroundColor(.primary)
+                            .padding(.bottom)
 
-                        TextField("Enter title here", text: Binding(get: { selectedNote?.title ?? "" }, set: { newTitle in
-                            if let index = selectedNoteIndex {
-                                selectedNote?.title = newTitle
-                                notes[index].title = newTitle
-                            }
-                        }))
-                        .font(.custom("Roboto", size: 24))
-                        .foregroundColor(.primary)
-                        .padding(.bottom)
+                            Divider()
+                                .frame(width: geometry.size.width / 3)
+                                .background(Color.primary)
 
-                        Text("Content")
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-
-                        TextEditor(text: Binding(get: { selectedNote?.body ?? "" }, set: { newText in
-                            if let index = selectedNoteIndex {
-                                selectedNote?.body = newText
-                                notes[index].body = newText
-                            }
-                        }))
-                        .font(.custom("Roboto", size: 16))
-                        .foregroundColor(.primary)
-                    }
-                    .padding()
-                } else {
-                    Text("Select or create a note")
-                        .font(.custom("Roboto", size: 24))
-                        .foregroundColor(.gray)
+                            TextEditor(text: Binding(get: { selectedNote?.body ?? "" }, set: { newText in
+                                if let index = selectedNoteIndex {
+                                    selectedNote?.body = newText
+                                    notes[index].body = newText
+                                }
+                            }))
+                            .font(.custom("Roboto", size: 16))
+                            .foregroundColor(.primary)
+                        }
                         .padding()
+                    } else {
+                        Text("Select or create a note")
+                            .font(.custom("Roboto", size: 24))
+                            .foregroundColor(.gray)
+                            .padding()
+                    }
                 }
             }
         }
