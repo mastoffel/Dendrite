@@ -18,7 +18,7 @@ struct ContentView: View {
                 searchBar
                 notesList
             }
-            .frame(minWidth: 300)
+            .frame(minWidth: 200)
 
             GeometryReader { geometry in
                 VStack {
@@ -30,7 +30,7 @@ struct ContentView: View {
                                     notes[index].title = newTitle
                                 }
                             }))
-                            .font(.custom("Roboto", size: 24))
+                            .font(.custom("Lato", size: 24))
                             .foregroundColor(.primary)
                             .padding(.bottom)
                             .textFieldStyle(PlainTextFieldStyle())
@@ -47,7 +47,7 @@ struct ContentView: View {
                                     notes[index].body = newText
                                 }
                             }))
-                            .font(.custom("Roboto", size: 16))
+                            .font(.custom("Lato", size: 16))
                             .foregroundColor(.primary)
                         }
                         .padding()
@@ -56,7 +56,7 @@ struct ContentView: View {
                         .shadow(radius: 5)
                     } else {
                         Text("Select or create a note")
-                            .font(.custom("Roboto", size: 24))
+                            .font(.custom("Lato", size: 24))
                             .foregroundColor(.gray)
                             .padding()
                     }
