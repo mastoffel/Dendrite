@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06B83AB129C76191006C6DF7 /* DendriteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B83AB029C76191006C6DF7 /* DendriteApp.swift */; };
+		06B83AB329C76191006C6DF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B83AB229C76191006C6DF7 /* ContentView.swift */; };
+		06B83AB529C76192006C6DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B83AB429C76192006C6DF7 /* Assets.xcassets */; };
+		06B83AB829C76192006C6DF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B83AB729C76192006C6DF7 /* Preview Assets.xcassets */; };
+		06B83AC329C76192006C6DF7 /* DendriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B83AC229C76192006C6DF7 /* DendriteTests.swift */; };
+		06B83ACD29C76192006C6DF7 /* DendriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B83ACC29C76192006C6DF7 /* DendriteUITests.swift */; };
+		06B83ACF29C76192006C6DF7 /* DendriteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B83ACE29C76192006C6DF7 /* DendriteUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06B83ABF29C76192006C6DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06B83AA529C76191006C6DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06B83AAC29C76191006C6DF7;
+			remoteInfo = Dendrite;
+		};
+		06B83AC929C76192006C6DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06B83AA529C76191006C6DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06B83AAC29C76191006C6DF7;
+			remoteInfo = Dendrite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06B83AAD29C76191006C6DF7 /* Dendrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dendrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B83AB029C76191006C6DF7 /* DendriteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DendriteApp.swift; sourceTree = "<group>"; };
+		06B83AB229C76191006C6DF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		06B83AB429C76192006C6DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06B83AB729C76192006C6DF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06B83AB929C76192006C6DF7 /* Dendrite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dendrite.entitlements; sourceTree = "<group>"; };
+		06B83ABE29C76192006C6DF7 /* DendriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DendriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B83AC229C76192006C6DF7 /* DendriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DendriteTests.swift; sourceTree = "<group>"; };
+		06B83AC829C76192006C6DF7 /* DendriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DendriteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B83ACC29C76192006C6DF7 /* DendriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DendriteUITests.swift; sourceTree = "<group>"; };
+		06B83ACE29C76192006C6DF7 /* DendriteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DendriteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06B83AAA29C76191006C6DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B83ABB29C76192006C6DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B83AC529C76192006C6DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06B83AA429C76191006C6DF7 = {
+			isa = PBXGroup;
+			children = (
+				06B83AAF29C76191006C6DF7 /* Dendrite */,
+				06B83AC129C76192006C6DF7 /* DendriteTests */,
+				06B83ACB29C76192006C6DF7 /* DendriteUITests */,
+				06B83AAE29C76191006C6DF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06B83AAE29C76191006C6DF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06B83AAD29C76191006C6DF7 /* Dendrite.app */,
+				06B83ABE29C76192006C6DF7 /* DendriteTests.xctest */,
+				06B83AC829C76192006C6DF7 /* DendriteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06B83AAF29C76191006C6DF7 /* Dendrite */ = {
+			isa = PBXGroup;
+			children = (
+				06B83AB029C76191006C6DF7 /* DendriteApp.swift */,
+				06B83AB229C76191006C6DF7 /* ContentView.swift */,
+				06B83AB429C76192006C6DF7 /* Assets.xcassets */,
+				06B83AB929C76192006C6DF7 /* Dendrite.entitlements */,
+				06B83AB629C76192006C6DF7 /* Preview Content */,
+			);
+			path = Dendrite;
+			sourceTree = "<group>";
+		};
+		06B83AB629C76192006C6DF7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				06B83AB729C76192006C6DF7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		06B83AC129C76192006C6DF7 /* DendriteTests */ = {
+			isa = PBXGroup;
+			children = (
+				06B83AC229C76192006C6DF7 /* DendriteTests.swift */,
+			);
+			path = DendriteTests;
+			sourceTree = "<group>";
+		};
+		06B83ACB29C76192006C6DF7 /* DendriteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				06B83ACC29C76192006C6DF7 /* DendriteUITests.swift */,
+				06B83ACE29C76192006C6DF7 /* DendriteUITestsLaunchTests.swift */,
+			);
+			path = DendriteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06B83AAC29C76191006C6DF7 /* Dendrite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B83AD229C76192006C6DF7 /* Build configuration list for PBXNativeTarget "Dendrite" */;
+			buildPhases = (
+				06B83AA929C76191006C6DF7 /* Sources */,
+				06B83AAA29C76191006C6DF7 /* Frameworks */,
+				06B83AAB29C76191006C6DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dendrite;
+			productName = Dendrite;
+			productReference = 06B83AAD29C76191006C6DF7 /* Dendrite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06B83ABD29C76192006C6DF7 /* DendriteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B83AD529C76192006C6DF7 /* Build configuration list for PBXNativeTarget "DendriteTests" */;
+			buildPhases = (
+				06B83ABA29C76192006C6DF7 /* Sources */,
+				06B83ABB29C76192006C6DF7 /* Frameworks */,
+				06B83ABC29C76192006C6DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06B83AC029C76192006C6DF7 /* PBXTargetDependency */,
+			);
+			name = DendriteTests;
+			productName = DendriteTests;
+			productReference = 06B83ABE29C76192006C6DF7 /* DendriteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06B83AC729C76192006C6DF7 /* DendriteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B83AD829C76192006C6DF7 /* Build configuration list for PBXNativeTarget "DendriteUITests" */;
+			buildPhases = (
+				06B83AC429C76192006C6DF7 /* Sources */,
+				06B83AC529C76192006C6DF7 /* Frameworks */,
+				06B83AC629C76192006C6DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06B83ACA29C76192006C6DF7 /* PBXTargetDependency */,
+			);
+			name = DendriteUITests;
+			productName = DendriteUITests;
+			productReference = 06B83AC829C76192006C6DF7 /* DendriteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06B83AA529C76191006C6DF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					06B83AAC29C76191006C6DF7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					06B83ABD29C76192006C6DF7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 06B83AAC29C76191006C6DF7;
+					};
+					06B83AC729C76192006C6DF7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 06B83AAC29C76191006C6DF7;
+					};
+				};
+			};
+			buildConfigurationList = 06B83AA829C76191006C6DF7 /* Build configuration list for PBXProject "Dendrite" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06B83AA429C76191006C6DF7;
+			productRefGroup = 06B83AAE29C76191006C6DF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06B83AAC29C76191006C6DF7 /* Dendrite */,
+				06B83ABD29C76192006C6DF7 /* DendriteTests */,
+				06B83AC729C76192006C6DF7 /* DendriteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06B83AAB29C76191006C6DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B83AB829C76192006C6DF7 /* Preview Assets.xcassets in Resources */,
+				06B83AB529C76192006C6DF7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B83ABC29C76192006C6DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B83AC629C76192006C6DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06B83AA929C76191006C6DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B83AB329C76191006C6DF7 /* ContentView.swift in Sources */,
+				06B83AB129C76191006C6DF7 /* DendriteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B83ABA29C76192006C6DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B83AC329C76192006C6DF7 /* DendriteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B83AC429C76192006C6DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B83ACF29C76192006C6DF7 /* DendriteUITestsLaunchTests.swift in Sources */,
+				06B83ACD29C76192006C6DF7 /* DendriteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06B83AC029C76192006C6DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06B83AAC29C76191006C6DF7 /* Dendrite */;
+			targetProxy = 06B83ABF29C76192006C6DF7 /* PBXContainerItemProxy */;
+		};
+		06B83ACA29C76192006C6DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06B83AAC29C76191006C6DF7 /* Dendrite */;
+			targetProxy = 06B83AC929C76192006C6DF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06B83AD029C76192006C6DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06B83AD129C76192006C6DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		06B83AD329C76192006C6DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dendrite/Dendrite.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dendrite/Preview Content\"";
+				DEVELOPMENT_TEAM = 2486SK429L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apfelring.Dendrite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		06B83AD429C76192006C6DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dendrite/Dendrite.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dendrite/Preview Content\"";
+				DEVELOPMENT_TEAM = 2486SK429L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apfelring.Dendrite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		06B83AD629C76192006C6DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2486SK429L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apfelring.DendriteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dendrite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dendrite";
+			};
+			name = Debug;
+		};
+		06B83AD729C76192006C6DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2486SK429L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apfelring.DendriteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dendrite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dendrite";
+			};
+			name = Release;
+		};
+		06B83AD929C76192006C6DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2486SK429L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apfelring.DendriteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Dendrite;
+			};
+			name = Debug;
+		};
+		06B83ADA29C76192006C6DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2486SK429L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apfelring.DendriteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Dendrite;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06B83AA829C76191006C6DF7 /* Build configuration list for PBXProject "Dendrite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B83AD029C76192006C6DF7 /* Debug */,
+				06B83AD129C76192006C6DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06B83AD229C76192006C6DF7 /* Build configuration list for PBXNativeTarget "Dendrite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B83AD329C76192006C6DF7 /* Debug */,
+				06B83AD429C76192006C6DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06B83AD529C76192006C6DF7 /* Build configuration list for PBXNativeTarget "DendriteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B83AD629C76192006C6DF7 /* Debug */,
+				06B83AD729C76192006C6DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06B83AD829C76192006C6DF7 /* Build configuration list for PBXNativeTarget "DendriteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B83AD929C76192006C6DF7 /* Debug */,
+				06B83ADA29C76192006C6DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06B83AA529C76191006C6DF7 /* Project object */;
+}
