@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var notes = [Note]()
     @State private var selectedNote: Note?
+    @State private var searchText = ""
     
     var body: some View {
         NavigationView {
@@ -41,7 +42,7 @@ struct ContentView: View {
     
     private var searchBar: some View {
         HStack {
-            TextField("Search", text: .constant(""))
+            TextField("Search", text: $searchText)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             
             Button(action: addNote) {
@@ -52,15 +53,12 @@ struct ContentView: View {
     }
     
     private var notesList: some View {
-        List(notes) { note in
+        List(filteredNotes) { note in
             Button(action: { selectNote(note) }) {
                 HStack {
                     VStack(alignment: .leading) {
                         Text(note.title.isEmpty ? "Untitled" : note.title)
                             .font(.headline)
-//                        Text(note.body)
-//                            .font(.subheadline)
-//                            .lineLimit(1)
                     }
                 }
             }
@@ -82,6 +80,14 @@ struct ContentView: View {
             notes.firstIndex { $0.id == note.id }
         }
     }
+    
+    private var filteredNotes: [Note] {
+        notes.filter { note in
+            searchText.isEmpty ||
+            note.title.localizedCaseInsensitiveContains(searchText) ||
+            note.body.localizedCaseInsensitiveContains(searchText)
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -89,5 +95,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
 
 
