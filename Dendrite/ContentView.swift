@@ -23,7 +23,6 @@ struct ContentView: View {
                 notesList
             }
             .frame(minWidth: 200)
-
             GeometryReader { geometry in
                 VStack {
                     if let _ = selectedNote {
@@ -85,17 +84,38 @@ struct ContentView: View {
     }
     
     private var notesList: some View {
-        List(filteredNotes) { note in
-            Button(action: { selectNote(note) }) {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text(note.title.isEmpty ? "Untitled" : note.title)
-                            .font(.headline)
+        List {
+            ForEach(filteredNotes) { note in
+                Button(action: { selectNote(note) }) {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(note.title.isEmpty ? "Untitled" : note.title)
+                                .font(.headline)
+                        }
+                    }
+                }
+                .contextMenu {
+                    Button(action: {
+                        if let index = notes.firstIndex(where: { $0.id == note.id }) {
+                            deleteNote(at: IndexSet(integer: index))
+                        }
+                    }) {
+                        Label("Delete", systemImage: "trash")
                     }
                 }
             }
         }
     }
+
+
+
+//    private var deleteButton: some View {
+//        Button(action: deleteSelectedNote) {
+//            Text("Delete")
+//                .foregroundColor(.red)
+//        }
+//    }
+    
     
     private func addNote() {
         let newNote = Note(title: "Untitled", body: "")
@@ -109,10 +129,10 @@ struct ContentView: View {
     }
     
     private func deleteNote(at offsets: IndexSet) {
-           notes.remove(atOffsets: offsets)
-           selectedNote = nil
-           saveNotes()
-       }
+        notes.remove(atOffsets: offsets)
+        selectedNote = nil
+        saveNotes()
+    }
     
     private var selectedNoteIndex: Int? {
         selectedNote.flatMap { note in
