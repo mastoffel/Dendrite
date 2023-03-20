@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Note: Identifiable {
+struct Note: Identifiable, Codable {
     let id: UUID
     var title: String
     var body: String

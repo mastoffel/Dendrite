@@ -11,7 +11,23 @@ import SwiftUI
 struct DendriteApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(notes: loadNotes())
         }
     }
 }
+
+func loadNotes() -> [Note] {
+    if let data = UserDefaults.standard.data(forKey: "notes") {
+        do {
+            let decoder = JSONDecoder()
+            let notes = try decoder.decode([Note].self, from: data)
+            return notes
+        } catch {
+            print("Error decoding notes: \(error)")
+        }
+    }
+    return []
+}
+
+
+

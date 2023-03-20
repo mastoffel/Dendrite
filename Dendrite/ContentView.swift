@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var notes = [Note]()
+    @State private var notes: [Note]
     @State private var selectedNote: Note?
     @State private var searchText = ""
+
+    init(notes: [Note] = []) {
+        self._notes = State(initialValue: notes)
+    }
 
     var body: some View {
         NavigationView {
@@ -28,6 +32,7 @@ struct ContentView: View {
                                 if let index = selectedNoteIndex {
                                     selectedNote?.title = newTitle
                                     notes[index].title = newTitle
+                                    saveNotes()
                                 }
                             }))
                             .font(.custom("Lato", size: 24))
@@ -45,14 +50,15 @@ struct ContentView: View {
                                 if let index = selectedNoteIndex {
                                     selectedNote?.body = newText
                                     notes[index].body = newText
+                                    saveNotes()
                                 }
                             }))
                             .font(.custom("Lato", size: 16))
                             .foregroundColor(.primary)
                         }
                         .padding()
-                        .background(Color.white) // set the background color of the child VStack to white
-                        .cornerRadius(10) // add a corner radius to the child VStack
+                        .background(Color.white)
+                        .cornerRadius(10)
                         .shadow(radius: 5)
                     } else {
                         Text("Select or create a note")
@@ -95,11 +101,18 @@ struct ContentView: View {
         let newNote = Note(title: "Untitled", body: "")
         notes.append(newNote)
         selectedNote = newNote
+        saveNotes()
     }
     
     private func selectNote(_ note: Note) {
         selectedNote = note
     }
+    
+    private func deleteNote(at offsets: IndexSet) {
+           notes.remove(atOffsets: offsets)
+           selectedNote = nil
+           saveNotes()
+       }
     
     private var selectedNoteIndex: Int? {
         selectedNote.flatMap { note in
@@ -112,6 +125,16 @@ struct ContentView: View {
             searchText.isEmpty ||
             note.title.localizedCaseInsensitiveContains(searchText) ||
             note.body.localizedCaseInsensitiveContains(searchText)
+        }
+    }
+        
+    private func saveNotes() {
+        do {
+            let encoder = JSONEncoder()
+            let data = try encoder.encode(notes)
+            UserDefaults.standard.set(data, forKey: "notes")
+        } catch {
+            print("Error encoding notes: \(error)")
         }
     }
 }
